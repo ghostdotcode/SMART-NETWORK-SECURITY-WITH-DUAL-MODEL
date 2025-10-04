@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/bhard/Desktop/technicals/coding/TRAIN%20NET%20SCANNER/mlruns/292035082538934683/e2c2d676c25f46b89b2866f931fd50b0/artifacts
+end_time: 1759610604026
+entry_point_name: ''
+experiment_id: '292035082538934683'
+lifecycle_stage: active
+run_id: e2c2d676c25f46b89b2866f931fd50b0
+run_name: Tune_RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759610143069
+status: 3
+tags: []
+user_id: bhard

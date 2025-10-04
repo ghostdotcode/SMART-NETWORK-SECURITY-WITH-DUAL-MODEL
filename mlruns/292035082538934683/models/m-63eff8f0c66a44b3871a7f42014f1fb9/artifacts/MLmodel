@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/bhard/Desktop/technicals/coding/TRAIN%20NET%20SCANNER/mlruns/292035082538934683/models/m-63eff8f0c66a44b3871a7f42014f1fb9/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.4.0
+model_id: m-63eff8f0c66a44b3871a7f42014f1fb9
+model_size_bytes: 9887222
+model_uuid: m-63eff8f0c66a44b3871a7f42014f1fb9
+prompts: null
+run_id: 534e3a4a5a3a4834bab7d495523d9d4c
+utc_time_created: '2025-10-04 20:56:15.939899'
