@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/bhard/Desktop/technicals/coding/TRAIN%20NET%20SCANNER/mlruns/292035082538934683/534e3a4a5a3a4834bab7d495523d9d4c/artifacts
+end_time: 1759611381208
+entry_point_name: ''
+experiment_id: '292035082538934683'
+lifecycle_stage: active
+run_id: 534e3a4a5a3a4834bab7d495523d9d4c
+run_name: Tune_LightGBM
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759610897350
+status: 3
+tags: []
+user_id: bhard

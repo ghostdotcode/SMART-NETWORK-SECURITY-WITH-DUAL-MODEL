@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/bhard/Desktop/technicals/coding/TRAIN%20NET%20SCANNER/mlruns/292035082538934683/models/m-63eff8f0c66a44b3871a7f42014f1fb9/artifacts
+creation_timestamp: 1759611375830
+experiment_id: '292035082538934683'
+last_updated_timestamp: 1759611381185
+model_id: m-63eff8f0c66a44b3871a7f42014f1fb9
+model_type: null
+name: LightGBM_model
+source_run_id: 534e3a4a5a3a4834bab7d495523d9d4c
+status: 2
+status_message: null

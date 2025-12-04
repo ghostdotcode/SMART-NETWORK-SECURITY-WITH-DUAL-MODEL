@@ -1,0 +1,30 @@
+# ===== Core ML/Data Science Libraries =====
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.6.1
+scipy==1.15.1
+xgboost==2.1.3
+lightgbm==4.5.0
+
+# ===== Web Framework & API =====
+Flask==3.1.0
+flask-socketio==5.4.1
+requests==2.32.3
+
+# ===== Network Monitoring & Packet Capture =====
+scapy==2.6.1
+
+# ===== Terminal Styling =====
+colorama==0.4.6
+
+# ===== Visualization (for model development) =====
+matplotlib==3.9.3
+seaborn==0.13.2
+
+# ===== MLflow (for experiment tracking) =====
+mlflow==3.4.0
+cloudpickle==3.1.1
+psutil==7.0.0
+
+# ===== Additional Utilities =====
+urllib3==2.2.3

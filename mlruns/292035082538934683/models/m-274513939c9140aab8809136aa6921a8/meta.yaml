@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/bhard/Desktop/technicals/coding/TRAIN%20NET%20SCANNER/mlruns/292035082538934683/models/m-274513939c9140aab8809136aa6921a8/artifacts
+creation_timestamp: 1759610579565
+experiment_id: '292035082538934683'
+last_updated_timestamp: 1759610603909
+model_id: m-274513939c9140aab8809136aa6921a8
+model_type: null
+name: RandomForest_model
+source_run_id: e2c2d676c25f46b89b2866f931fd50b0
+status: 2
+status_message: null

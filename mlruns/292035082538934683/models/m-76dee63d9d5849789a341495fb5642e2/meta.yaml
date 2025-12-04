@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/bhard/Desktop/technicals/coding/TRAIN%20NET%20SCANNER/mlruns/292035082538934683/models/m-76dee63d9d5849789a341495fb5642e2/artifacts
+creation_timestamp: 1759610892222
+experiment_id: '292035082538934683'
+last_updated_timestamp: 1759610897298
+model_id: m-76dee63d9d5849789a341495fb5642e2
+model_type: null
+name: XGBoost_model
+source_run_id: 72d04266289144158252f1c18cccdd24
+status: 2
+status_message: null

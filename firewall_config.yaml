@@ -1,0 +1,148 @@
+# AI Firewall Configuration File
+# Modify these settings to customize your firewall behavior
+
+# ===== ML MODEL CONFIGURATION =====
+ml_model:
+  api_url: "http://127.0.0.1:5050/predict"
+  timeout: 5  # seconds
+  fallback_action: "MANAGED_CHALLENGE"  # Action when ML API is down
+
+# ===== PROXY CONFIGURATION =====
+proxy:
+  host: "0.0.0.0"  # Listen on all interfaces
+  port: 8080
+  
+# ===== BLOCKING RULES =====
+blocking:
+  # Actions that will result in immediate block (403 Forbidden)
+  blocked_actions:
+    - "BLOCK"
+    - "JSCHALLENGE"
+  
+  # Actions that will show verification page
+  challenged_actions:
+    - "CHALLENGE"
+  
+  # Actions that pass through with monitoring
+  allowed_actions:
+    - "MANAGED_CHALLENGE"
+  
+  # Custom block messages
+  block_message: "Your request has been identified as malicious and blocked by our AI Firewall"
+  challenge_message: "Please verify you are human to continue"
+
+# ===== RATE LIMITING =====
+rate_limiting:
+  enabled: true
+  max_requests_per_minute: 100
+  max_requests_per_hour: 1000
+  block_on_exceed: true
+
+# ===== IP WHITELIST =====
+# These IPs will ALWAYS be allowed through (bypass ML check)
+whitelist:
+  ips:
+    - "127.0.0.1"
+    - "::1"
+  
+  # CIDR notation supported
+  networks:
+    - "192.168.0.0/16"
+    - "10.0.0.0/8"
+
+# ===== IP BLACKLIST =====
+# These IPs will ALWAYS be blocked (bypass ML check)
+blacklist:
+  ips:
+    - "185.191.171.0/24"  # Known malicious range
+  
+  countries:
+    []  # e.g., ["KP", "IR"] - block entire countries
+  
+  auto_blacklist:
+    enabled: true
+    threshold: 5  # Block IP after 5 blocked requests
+    duration: 3600  # Blacklist duration in seconds (1 hour)
+
+# ===== GEOLOCATION =====
+geolocation:
+  provider: "ip-api"  # Options: "ip-api", "maxmind", "ipinfo"
+  cache_duration: 86400  # Cache geo results for 24 hours
+  
+  # For MaxMind (requires GeoLite2 database)
+  maxmind:
+    database_path: "GeoLite2-Country.mmdb"
+
+# ===== LOGGING =====
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  
+  files:
+    general: "firewall.log"
+    blocked: "blocked_requests.log"
+    allowed: "allowed_requests.log"
+  
+  max_file_size: "100MB"
+  backup_count: 5
+  
+  # Log format
+  detailed: true  # Include full request details in logs
+
+# ===== STATISTICS =====
+statistics:
+  enabled: true
+  reset_interval: 86400  # Reset daily stats every 24 hours
+  
+  # Export stats to file
+  export:
+    enabled: true
+    file: "firewall_stats.json"
+    interval: 3600  # Export every hour
+
+# ===== ALERTS =====
+alerts:
+  enabled: false
+  
+  # Email alerts
+  email:
+    enabled: false
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    from_address: "firewall@example.com"
+    to_addresses:
+      - "admin@example.com"
+    alert_on:
+      - "high_blocking_rate"  # Alert if blocking >50% of traffic
+      - "ml_api_down"
+      - "ddos_detected"
+  
+  # Slack alerts
+  slack:
+    enabled: false
+    webhook_url: ""
+    channel: "#security-alerts"
+
+# ===== ADVANCED FEATURES =====
+advanced:
+  # Honeypot mode - slow down malicious requests instead of blocking
+  honeypot:
+    enabled: false
+    delay_seconds: 10
+  
+  # CAPTCHA integration
+  captcha:
+    enabled: false
+    provider: "recaptcha"  # recaptcha, hcaptcha
+    site_key: ""
+    secret_key: ""
+  
+  # Request fingerprinting
+  fingerprinting:
+    enabled: true
+    track_user_agents: true
+    track_headers: true
+  
+  # Custom response pages
+  custom_pages:
+    block_page: "templates/blocked.html"
+    challenge_page: "templates/challenge.html"

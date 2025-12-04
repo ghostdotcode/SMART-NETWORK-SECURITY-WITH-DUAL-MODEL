@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/bhard/Desktop/technicals/coding/TRAIN%20NET%20SCANNER/mlruns/292035082538934683/72d04266289144158252f1c18cccdd24/artifacts
+end_time: 1759610897326
+entry_point_name: ''
+experiment_id: '292035082538934683'
+lifecycle_stage: active
+run_id: 72d04266289144158252f1c18cccdd24
+run_name: Tune_XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759610604048
+status: 3
+tags: []
+user_id: bhard
