@@ -17,14 +17,19 @@ scapy==2.6.1
 # ===== Terminal Styling =====
 colorama==0.4.6
 
-# ===== Visualization (for model development) =====
+# ===== Visualization & EDA =====
 matplotlib==3.9.3
 seaborn==0.13.2
+plotly
 
 # ===== MLflow (for experiment tracking) =====
 mlflow==3.4.0
 cloudpickle==3.1.1
 psutil==7.0.0
+
+# ===== Blockchain & IPFS =====
+web3
+ipfshttpclient
 
 # ===== Additional Utilities =====
 urllib3==2.2.3
