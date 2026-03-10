@@ -1,0 +1,274 @@
+[2025-12-04 19:51:41,014] INFO - Database initialized and schema verified.
+[2025-12-04 19:51:41,016] INFO - Firewall loaded 0 rules into memory.
+[2025-12-04 19:51:41,055] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-04 19:51:41,055] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-04 19:51:41,055] INFO -  * Restarting with stat
+[2025-12-04 19:51:41,403] INFO - Database initialized and schema verified.
+[2025-12-04 19:51:41,404] INFO - Firewall loaded 0 rules into memory.
+[2025-12-04 19:51:41,422] WARNING -  * Debugger is active!
+[2025-12-04 19:51:41,429] INFO -  * Debugger PIN: 937-464-705
+[2025-12-04 19:53:48,132] INFO - ALLOWED: AI marked 10.9.3.166 as SAFE.
+[2025-12-04 19:53:48,134] INFO - 10.9.3.166 - - [04/Dec/2025 19:53:48] "GET / HTTP/1.1" 200 -
+[2025-12-04 19:53:50,223] INFO - ALLOWED: AI marked 10.9.3.166 as SAFE.
+[2025-12-04 19:53:50,223] INFO - 10.9.3.166 - - [04/Dec/2025 19:53:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-04 19:55:44,730] INFO - ALLOWED: AI marked 10.9.3.166 as SAFE.
+[2025-12-04 19:55:44,730] INFO - 10.9.3.166 - - [04/Dec/2025 19:55:44] "GET / HTTP/1.1" 200 -
+[2025-12-04 19:58:08,792] INFO - ALLOWED: AI marked 10.9.3.166 as SAFE.
+[2025-12-04 19:58:08,792] INFO - 10.9.3.166 - - [04/Dec/2025 19:58:08] "GET / HTTP/1.1" 200 -
+[2025-12-04 19:58:08,946] INFO - ALLOWED: AI marked 10.9.3.166 as SAFE.
+[2025-12-04 19:58:08,946] INFO - 10.9.3.166 - - [04/Dec/2025 19:58:08] "GET / HTTP/1.1" 200 -
+[2025-12-04 21:18:36,462] INFO - ALLOWED: AI marked 10.9.3.166 as SAFE.
+[2025-12-04 21:18:36,462] INFO - 10.9.3.166 - - [04/Dec/2025 21:18:36] "GET / HTTP/1.1" 200 -
+[2025-12-04 21:46:28,106] INFO - Database initialized and schema verified.
+[2025-12-04 21:46:28,108] INFO - Firewall loaded 0 rules into memory.
+[2025-12-04 21:46:28,165] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-04 21:46:28,165] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-04 21:46:28,167] INFO -  * Restarting with stat
+[2025-12-04 21:46:28,698] INFO - Database initialized and schema verified.
+[2025-12-04 21:46:28,700] INFO - Firewall loaded 0 rules into memory.
+[2025-12-04 21:46:28,732] WARNING -  * Debugger is active!
+[2025-12-04 21:46:28,739] INFO -  * Debugger PIN: 538-522-636
+[2025-12-04 21:46:52,425] ERROR - AI Model Connection Failed: 403 Forbidden: You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.
+[2025-12-04 21:46:52,430] INFO - 10.9.3.166 - - [04/Dec/2025 21:46:52] "GET / HTTP/1.1" 200 -
+[2025-12-04 21:46:52,485] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.166 tried to connect.
+[2025-12-04 21:46:52,493] INFO - 10.9.3.166 - - [04/Dec/2025 21:46:52] "[31m[1mGET /favicon.ico HTTP/1.1[0m" 403 -
+[2025-12-04 21:47:20,016] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.166 tried to connect.
+[2025-12-04 21:47:20,018] INFO - 10.9.3.166 - - [04/Dec/2025 21:47:20] "[31m[1mGET / HTTP/1.1[0m" 403 -
+[2025-12-04 21:47:20,078] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.166 tried to connect.
+[2025-12-04 21:47:20,091] INFO - 10.9.3.166 - - [04/Dec/2025 21:47:20] "[31m[1mGET /favicon.ico HTTP/1.1[0m" 403 -
+[2025-12-04 21:49:17,642] ERROR - AI Model Connection Failed: 403 Forbidden: You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.
+[2025-12-04 21:49:17,642] INFO - 10.9.3.163 - - [04/Dec/2025 21:49:17] "GET / HTTP/1.1" 200 -
+[2025-12-04 21:49:19,116] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.163 tried to connect.
+[2025-12-04 21:49:19,118] INFO - 10.9.3.163 - - [04/Dec/2025 21:49:19] "[31m[1mGET /favicon.ico HTTP/1.1[0m" 403 -
+[2025-12-04 21:49:49,664] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.163 tried to connect.
+[2025-12-04 21:49:49,668] INFO - 10.9.3.163 - - [04/Dec/2025 21:49:49] "[31m[1mGET / HTTP/1.1[0m" 403 -
+[2025-12-04 21:49:50,406] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.163 tried to connect.
+[2025-12-04 21:49:50,414] INFO - 10.9.3.163 - - [04/Dec/2025 21:49:50] "[31m[1mGET /favicon.ico HTTP/1.1[0m" 403 -
+[2025-12-04 21:50:35,404] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.163 tried to connect.
+[2025-12-04 21:50:35,404] INFO - 10.9.3.163 - - [04/Dec/2025 21:50:35] "[31m[1mGET / HTTP/1.1[0m" 403 -
+[2025-12-04 21:50:36,101] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.163 tried to connect.
+[2025-12-04 21:50:36,103] INFO - 10.9.3.163 - - [04/Dec/2025 21:50:36] "[31m[1mGET /favicon.ico HTTP/1.1[0m" 403 -
+[2025-12-04 21:50:40,322] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.163 tried to connect.
+[2025-12-04 21:50:40,326] INFO - 10.9.3.163 - - [04/Dec/2025 21:50:40] "[31m[1mGET / HTTP/1.1[0m" 403 -
+[2025-12-04 21:50:41,139] INFO - BLOCKED ATTEMPT: Known malicious IP 10.9.3.163 tried to connect.
+[2025-12-04 21:50:41,141] INFO - 10.9.3.163 - - [04/Dec/2025 21:50:41] "[31m[1mGET /favicon.ico HTTP/1.1[0m" 403 -
+[2025-12-05 03:15:49,514] INFO - Database initialized and schema verified.
+[2025-12-05 03:15:49,516] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 03:15:49,564] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-05 03:15:49,564] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 03:15:49,567] INFO -  * Restarting with stat
+[2025-12-05 03:15:50,025] INFO - Database initialized and schema verified.
+[2025-12-05 03:15:50,028] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 03:15:50,054] WARNING -  * Debugger is active!
+[2025-12-05 03:15:50,059] INFO -  * Debugger PIN: 538-522-636
+[2025-12-05 03:44:31,940] INFO - Database initialized and schema verified.
+[2025-12-05 03:44:31,940] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 03:44:31,978] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-05 03:44:31,979] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 03:44:31,979] INFO -  * Restarting with stat
+[2025-12-05 03:44:32,322] INFO - Database initialized and schema verified.
+[2025-12-05 03:44:32,322] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 03:44:32,344] WARNING -  * Debugger is active!
+[2025-12-05 03:44:32,347] INFO -  * Debugger PIN: 538-522-636
+[2025-12-05 04:04:03,204] INFO - Database initialized and schema verified.
+[2025-12-05 04:04:03,204] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 04:04:03,250] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-05 04:04:03,250] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 04:04:03,252] INFO -  * Restarting with stat
+[2025-12-05 04:04:03,626] INFO - Database initialized and schema verified.
+[2025-12-05 04:04:03,626] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 04:04:03,648] WARNING -  * Debugger is active!
+[2025-12-05 04:04:03,652] INFO -  * Debugger PIN: 538-522-636
+[2025-12-05 04:05:07,705] INFO -  * Detected change in 'C:\\Users\\bhard\\Desktop\\technicals\\coding\\SIH EXTERNAL 2025\\SMART-NETWORK-SECURITY-WITH-DUAL-MODEL-master\\test_blocking_status.py', reloading
+[2025-12-05 04:05:07,757] INFO -  * Restarting with stat
+[2025-12-05 04:05:08,115] INFO - Database initialized and schema verified.
+[2025-12-05 04:05:08,115] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 04:05:08,135] WARNING -  * Debugger is active!
+[2025-12-05 04:05:08,141] INFO -  * Debugger PIN: 538-522-636
+[2025-12-05 04:05:30,535] ERROR - Connection error to AI Firewall API: HTTPConnectionPool(host='localhost', port=5050): Max retries exceeded with url: /threats (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000021B84091390>, 'Connection to localhost timed out. (connect timeout=2)'))
+[2025-12-05 04:05:30,535] INFO - ALLOWED: AI marked 127.0.0.1 as SAFE.
+[2025-12-05 04:05:30,536] INFO - 127.0.0.1 - - [05/Dec/2025 04:05:30] "GET / HTTP/1.1" 200 -
+[2025-12-05 04:07:15,620] INFO - ALLOWED: AI marked 127.0.0.1 as SAFE.
+[2025-12-05 04:07:15,620] INFO - 127.0.0.1 - - [05/Dec/2025 04:07:15] "GET / HTTP/1.1" 200 -
+[2025-12-05 04:15:17,746] INFO - Database initialized and schema verified.
+[2025-12-05 04:15:17,749] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 04:15:17,800] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-05 04:15:17,800] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 04:15:17,802] INFO -  * Restarting with stat
+[2025-12-05 04:15:18,331] INFO - Database initialized and schema verified.
+[2025-12-05 04:15:18,333] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 04:15:18,374] WARNING -  * Debugger is active!
+[2025-12-05 04:15:18,386] INFO -  * Debugger PIN: 538-522-636
+[2025-12-05 04:22:38,664] INFO - Database initialized and schema verified.
+[2025-12-05 04:22:38,664] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 04:22:38,723] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-05 04:22:38,723] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 04:22:38,724] INFO -  * Restarting with stat
+[2025-12-05 04:22:39,163] INFO - Database initialized and schema verified.
+[2025-12-05 04:22:39,163] INFO - Firewall loaded 2 rules into memory.
+[2025-12-05 04:22:39,196] WARNING -  * Debugger is active!
+[2025-12-05 04:22:39,202] INFO -  * Debugger PIN: 521-243-256
+[2025-12-05 04:47:53,697] INFO - Migrating database: Adding 'status' column...
+[2025-12-05 04:47:53,704] INFO - Database initialized and schema verified.
+[2025-12-05 04:47:53,706] INFO - Threat Polling Service Started...
+[2025-12-05 04:47:53,755] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-05 04:47:53,757] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 04:47:53,757] INFO -  * Restarting with stat
+[2025-12-05 04:47:54,143] INFO - Database initialized and schema verified.
+[2025-12-05 04:47:54,143] INFO - Threat Polling Service Started...
+[2025-12-05 04:47:54,175] WARNING -  * Debugger is active!
+[2025-12-05 04:47:54,180] INFO -  * Debugger PIN: 521-243-256
+[2025-12-05 04:47:58,995] INFO - 10.9.3.166 - - [05/Dec/2025 04:47:58] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-12-05 04:47:59,072] INFO - 10.9.3.166 - - [05/Dec/2025 04:47:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-05 04:48:34,703] INFO - 10.9.3.166 - - [05/Dec/2025 04:48:34] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-12-05 04:48:38,165] INFO - 10.9.3.166 - - [05/Dec/2025 04:48:38] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-12-05 04:48:39,603] INFO - 10.9.3.166 - - [05/Dec/2025 04:48:39] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-12-05 04:48:39,770] INFO - 10.9.3.166 - - [05/Dec/2025 04:48:39] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-12-05 04:48:39,914] INFO - 10.9.3.166 - - [05/Dec/2025 04:48:39] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-12-05 05:14:28,007] INFO - Database initialized and schema verified.
+[2025-12-05 05:14:28,007] INFO - Threat Polling Service Started...
+[2025-12-05 05:14:28,049] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.3.166:5000
+[2025-12-05 05:14:28,049] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 05:14:28,052] INFO -  * Restarting with stat
+[2025-12-05 05:14:28,459] INFO - Database initialized and schema verified.
+[2025-12-05 05:14:28,459] INFO - Threat Polling Service Started...
+[2025-12-05 05:14:28,483] WARNING -  * Debugger is active!
+[2025-12-05 05:14:28,487] INFO -  * Debugger PIN: 521-243-256
+[2025-12-05 05:14:44,379] INFO - 127.0.0.1 - - [05/Dec/2025 05:14:44] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:14:44,618] INFO - 127.0.0.1 - - [05/Dec/2025 05:14:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-05 05:14:54,646] INFO - 127.0.0.1 - - [05/Dec/2025 05:14:54] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:01,487] INFO - Updated status for 10.9.3.163 to ALLOWED
+[2025-12-05 05:15:01,490] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:01] "[32mGET /toggle/10.9.3.163 HTTP/1.1[0m" 302 -
+[2025-12-05 05:15:01,757] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:01] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:11,809] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:11] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:20,840] INFO - Updated status for 10.9.3.163 to BLOCKED
+[2025-12-05 05:15:20,840] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:20] "[32mGET /toggle/10.9.3.163 HTTP/1.1[0m" 302 -
+[2025-12-05 05:15:21,093] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:21] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:22,429] INFO - Updated status for 10.9.3.166 to ALLOWED
+[2025-12-05 05:15:22,429] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:22] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 05:15:22,754] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:22] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:32,807] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:32] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:35,968] INFO - Updated status for 10.9.3.166 to BLOCKED
+[2025-12-05 05:15:35,970] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:35] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 05:15:36,232] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:36] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:46,280] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:46] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 05:15:56,663] INFO - 127.0.0.1 - - [05/Dec/2025 05:15:56] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:11:48,154] INFO - Database initialized and schema verified.
+[2025-12-05 09:11:48,155] INFO - Threat Polling Service Started...
+[2025-12-05 09:11:48,195] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.9.1.42:5000
+[2025-12-05 09:11:48,196] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-05 09:11:48,197] INFO -  * Restarting with stat
+[2025-12-05 09:11:48,557] INFO - Database initialized and schema verified.
+[2025-12-05 09:11:48,557] INFO - Threat Polling Service Started...
+[2025-12-05 09:11:48,585] WARNING -  * Debugger is active!
+[2025-12-05 09:11:48,587] INFO -  * Debugger PIN: 521-243-256
+[2025-12-05 09:12:00,669] INFO - 10.9.1.42 - - [05/Dec/2025 09:12:00] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-12-05 09:12:00,752] INFO - 10.9.1.42 - - [05/Dec/2025 09:12:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-12-05 09:12:09,931] INFO - 127.0.0.1 - - [05/Dec/2025 09:12:09] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:12:20,157] INFO - 127.0.0.1 - - [05/Dec/2025 09:12:20] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:12:30,535] INFO - 127.0.0.1 - - [05/Dec/2025 09:12:30] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:12:40,596] INFO - 127.0.0.1 - - [05/Dec/2025 09:12:40] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:12:50,977] INFO - 127.0.0.1 - - [05/Dec/2025 09:12:50] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:13:01,037] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:01] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:13:03,605] INFO - Updated status for 10.9.3.166 to ALLOWED
+[2025-12-05 09:13:03,607] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:03] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 09:13:03,869] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:03] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:13:13,922] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:13] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:13:24,287] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:24] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:13:34,353] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:34] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:13:39,585] INFO - Updated status for 10.9.3.166 to BLOCKED
+[2025-12-05 09:13:39,587] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:39] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 09:13:39,846] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:39] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:13:49,891] INFO - 127.0.0.1 - - [05/Dec/2025 09:13:49] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:14:00,248] INFO - 127.0.0.1 - - [05/Dec/2025 09:14:00] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:14:10,307] INFO - 127.0.0.1 - - [05/Dec/2025 09:14:10] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:14:20,682] INFO - 127.0.0.1 - - [05/Dec/2025 09:14:20] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:14:30,737] INFO - 127.0.0.1 - - [05/Dec/2025 09:14:30] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:14:41,098] INFO - 127.0.0.1 - - [05/Dec/2025 09:14:41] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:14:51,168] INFO - 127.0.0.1 - - [05/Dec/2025 09:14:51] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:01,543] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:01] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:11,596] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:11] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:21,968] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:21] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:32,042] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:32] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:33,243] INFO - Updated status for 10.9.3.166 to ALLOWED
+[2025-12-05 09:15:33,246] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:33] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 09:15:33,496] INFO - Updated status for 10.9.3.163 to ALLOWED
+[2025-12-05 09:15:33,498] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:33] "[32mGET /toggle/10.9.3.163 HTTP/1.1[0m" 302 -
+[2025-12-05 09:15:33,575] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:33] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:33,901] INFO - Updated status for 2.16.106.207 to ALLOWED
+[2025-12-05 09:15:33,902] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:33] "[32mGET /toggle/2.16.106.207 HTTP/1.1[0m" 302 -
+[2025-12-05 09:15:33,917] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:33] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:38,840] INFO - Updated status for 2.16.106.207 to BLOCKED
+[2025-12-05 09:15:38,843] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:38] "[32mGET /toggle/2.16.106.207 HTTP/1.1[0m" 302 -
+[2025-12-05 09:15:39,096] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:39] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:39,174] INFO - Updated status for 10.9.3.163 to BLOCKED
+[2025-12-05 09:15:39,180] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:39] "[32mGET /toggle/10.9.3.163 HTTP/1.1[0m" 302 -
+[2025-12-05 09:15:39,446] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:39] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:39,822] INFO - Updated status for 10.9.3.166 to BLOCKED
+[2025-12-05 09:15:39,830] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:39] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 09:15:40,165] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:40] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:15:50,230] INFO - 127.0.0.1 - - [05/Dec/2025 09:15:50] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:16:00,591] INFO - 127.0.0.1 - - [05/Dec/2025 09:16:00] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:16:10,640] INFO - 127.0.0.1 - - [05/Dec/2025 09:16:10] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:16:16,558] INFO - Updated status for 10.9.3.166 to ALLOWED
+[2025-12-05 09:16:16,558] INFO - 127.0.0.1 - - [05/Dec/2025 09:16:16] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 09:16:16,822] INFO - 127.0.0.1 - - [05/Dec/2025 09:16:16] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 09:16:21,412] INFO - Updated status for 10.9.3.166 to BLOCKED
+[2025-12-05 09:16:21,418] INFO - 127.0.0.1 - - [05/Dec/2025 09:16:21] "[32mGET /toggle/10.9.3.166 HTTP/1.1[0m" 302 -
+[2025-12-05 09:16:21,743] INFO - 127.0.0.1 - - [05/Dec/2025 09:16:21] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 10:20:58,487] INFO - 127.0.0.1 - - [05/Dec/2025 10:20:58] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-05 14:42:12,437] INFO - 127.0.0.1 - - [05/Dec/2025 14:42:12] "GET /dashboard HTTP/1.1" 200 -
+[2025-12-08 10:19:46,271] INFO - Database initialized and schema verified.
+[2025-12-08 10:19:46,272] INFO - Threat Polling Service Started...
+[2025-12-08 10:19:46,323] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.36.104:5000
+[2025-12-08 10:19:46,323] INFO - [33mPress CTRL+C to quit[0m
+[2025-12-08 10:19:46,323] INFO -  * Restarting with stat
+[2025-12-08 10:19:46,689] INFO - Database initialized and schema verified.
+[2025-12-08 10:19:46,689] INFO - Threat Polling Service Started...
+[2025-12-08 10:19:46,715] WARNING -  * Debugger is active!
+[2025-12-08 10:19:46,722] INFO -  * Debugger PIN: 517-959-493
+[2026-01-21 12:48:31,249] INFO - Database initialized and schema verified.
+[2026-01-21 12:48:31,249] INFO - Threat Polling Service Started...
+[2026-01-21 12:48:31,370] INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.90.237.46:5000
+[2026-01-21 12:48:31,371] INFO - [33mPress CTRL+C to quit[0m
+[2026-01-21 12:48:31,378] INFO -  * Restarting with stat
+[2026-01-21 12:48:31,734] INFO - Database initialized and schema verified.
+[2026-01-21 12:48:31,734] INFO - Threat Polling Service Started...
+[2026-01-21 12:48:31,769] WARNING -  * Debugger is active!
+[2026-01-21 12:48:31,773] INFO -  * Debugger PIN: 517-959-493

@@ -1,9 +1,10 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template_string, abort
 import warnings
 import traceback
 from datetime import datetime
 from collections import defaultdict
 import threading
+import sqlite3
 
 # Scapy imports for packet capture
 from scapy.all import sniff, IP, TCP, UDP, ICMP
@@ -21,6 +22,64 @@ warnings.filterwarnings('ignore')
 # --- 2. Initialize Flask Application ---
 app = Flask(__name__)
 print("Flask application initialized.")
+
+# ==========================================
+# FIREWALL ENFORCEMENT MIDDLEWARE
+# ==========================================
+DB_FILE = "firewall_rules.db"
+
+def is_ip_blocked(ip):
+    """Check if IP is blocked in the shared database."""
+    try:
+        with sqlite3.connect(DB_FILE) as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT status FROM blocked_registry WHERE ip_address = ?", (ip,))
+            row = cursor.fetchone()
+            if row and row[0] == 'BLOCKED':
+                return True
+    except Exception as e:
+        print(f"[FIREWALL ERROR] DB Check Failed: {e}")
+    return False
+
+@app.before_request
+def check_firewall():
+    """Gatekeeper: Check every request against the blacklist."""
+    # Skip static assets if needed, but for high security check everything
+    if request.endpoint != 'static':
+        client_ip = request.remote_addr
+        # Handle Proxy headers if behind one (optional but good practice)
+        if request.headers.get('X-Forwarded-For'):
+            client_ip = request.headers.get('X-Forwarded-For').split(',')[0]
+            
+        if is_ip_blocked(client_ip):
+            print(f"[BLOCKED] Connection attempt from {client_ip} rejected.")
+            abort(403)
+
+@app.errorhandler(403)
+def access_forbidden(e):
+    """Return a professional Forbidden error resembling a network drop."""
+    return render_template_string('''
+        <html>
+            <head>
+                <title>403 Forbidden</title>
+                <style>
+                    body { font-family: 'Courier New', monospace; background: #000000; color: #ff0000; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+                    .container { text-align: center; border: 2px solid #ff0000; padding: 50px; background: #110000; box-shadow: 0 0 20px #ff0000; }
+                    h1 { font-size: 60px; margin: 0; letter-spacing: 5px; }
+                    p { font-size: 20px; margin-top: 20px; }
+                    .blink { animation: blinker 1s linear infinite; }
+                    @keyframes blinker { 50% { opacity: 0; } }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1 class="blink">ACCESS DENIED</h1>
+                    <p>Your IP address has been flagged as malicious.</p>
+                    <p>Connection Terminated by AI Firewall.</p>
+                </div>
+            </body>
+        </html>
+    '''), 403
 
 # --- 3. Attack Detection Thresholds ---
 SYN_FLOOD_THRESHOLD = 50  # SYN packets per second from same IP
@@ -351,3 +410,4 @@ if __name__ == '__main__':
     
     # Run Flask app
     app.run(host='0.0.0.0', port=5050, debug=False)
+ #https://www.youtube.com/watch?v=RxfiIPYbZnM
